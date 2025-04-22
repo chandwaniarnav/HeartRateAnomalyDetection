@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+elf = ".pio/build/your_environment/firmware.elf"
+firmware = ".pio/build/your_environment/firmware.bin"
+
+# Forward HTTP requests from localhost:8180 to the ESP32 server running on port 80
+[[net.forward]]
+from = "localhost:8180"
+to = "target:80"
